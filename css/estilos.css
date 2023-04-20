@@ -1,6 +1,7 @@
 body {
 	background-image: url(/images/fondo.png);
-	background-size: 100%
+	background-size: 100%;
+	height: 100%;
 }
 
 * {
@@ -80,66 +81,83 @@ h2 {
 /*************FORMULARIO RESERVAS********/
 
 .container2 {
-    margin: auto;
-    width: 60%;
-    border: 3px solid #6e6e6e;
-    border-radius: 10px;
-    padding: 0px;
+	margin: auto;
+	width: 60%;
+	border: 3px solid #6e6e6e;
+	border-radius: 10px;
+	padding: 0px;
 }
 
 .container2 label {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	color: white;
+}
+
+h2 {
+	color: white;
 }
 
 
 @media screen and (max-width: 600px) {
-    .container2 {
-        width: 90%;
-    }
+	.container2 {
+		margin-bottom: 10px;
+	}
+
+	.redes {
+		text-align: center;
+	}
 }
 
 
 /**************FORMULARIO CONTACTO*************/
 
 form {
-    border: 3px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-	background-color: rgba(255, 0, 0, 0.6);
+	border: 3px solid #ddd;
+	padding: 20px;
+	border-radius: 10px;
 }
 
 form label {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 form .form-control {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 form .invalid-feedback {
-    display: block;
-    font-size: 14px;
-    color: #dc3545;
+	display: block;
+	font-size: 14px;
+	color: #dc3545;
 }
 
 form .btn-primary {
-    background-color: #FF9F1C;
-    border-color: #FF9F1C;
+	background-color: #FF9F1C;
+	border-color: #FF9F1C;
 }
 
 form .btn-primary:hover {
-    background-color: #F7941E;
-    border-color: #F7941E;
+	background-color: #F7941E;
+	border-color: #F7941E;
+}
+
+.mb-4,
+.form-label {
+	color: white;
 }
 
 /* Estilos específicos para pantallas pequeñas */
-@media(max-width: 576px) {
-    form .form-control {
-        margin-bottom: 10px;
-    }
+@media(max-width: 600px) {
+	form .form-control {
+		margin-bottom: 10px;
+	}
+
+	.redes {
+		text-align: center;
+	}
 }
 
 /**************IMAGENES INICIO*************/
@@ -163,15 +181,114 @@ form .btn-primary:hover {
 	background-color: #333;
 }
 
-/**********footer menu*********/
+@media screen and (max-width: 1150px) {
+	.fotos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+		margin-left: 50px;
+		padding: 50px 0;
+	}
+
+	.fotos-muestra img {
+		max-width: 300px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	.fotos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 50px;
+		margin-left: 150px;
+		padding: 50px 0;
+	}
+
+	.fotos-muestra img {
+		max-width: 200px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 365px) {
+	.fotos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 50px;
+		margin-left: 20px;
+		padding: 50px 0;
+	}
+
+	.fotos-muestra img {
+		max-width: 200px;
+		height: 300px;
+	}
+}
+
 
 #menufooter {
 	background-color: #333;
 	color: white;
-	padding: 20px ;
-	position: absolute;
+	padding: 20px;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
 	text-align: center;
+}
+
+/*****************NOSOTROS***********/
+
+#historia {
+	padding: 50px 0;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.container p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.container h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.container ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.mapa {
+	margin-top: 30px;
+	position: relative;
+	padding-bottom: 35%;
+	height: 0;
+}
+
+.mapa iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
