@@ -35,32 +35,6 @@ h2 {
 
 
 
-
-
-
-    /**************IMAGENES INICIO*************/
-
-    .fotos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        margin-left: 150px;
-        padding: 50px 0;
-    }
-
-    .fotos-muestra img {
-        max-width: 500px;
-        height: 300px;
-    }
-
-    .accordion-button {
-        color: $colorprimario;
-        text-align: center;
-        background-color: #333;
-    }
-
-
-
     #menufooter {
         background-color: #333;
         color: $colorprimario;
@@ -122,3 +96,4 @@ h2 {
             height: 100%;
         }
     }
+

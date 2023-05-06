@@ -11,6 +11,26 @@
 
 
     /* Estilos específicos para pantallas pequeñas imagenes inicio*/
+    
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        margin-left: 150px;
+        padding: 50px 0;
+    }
+    
+    .fotos-muestra img {
+        max-width: 500px;
+        height: 300px;
+    }
+    
+    .accordion-button {
+        color: #fff;
+        text-align: center;
+        background-color: #333;
+    }
+    
     @media screen and (max-width: 1150px) {
         .fotos {
             display: grid;
@@ -19,13 +39,13 @@
             margin-left: 50px;
             padding: 50px 0;
         }
-
+    
         .fotos-muestra img {
             max-width: 300px;
             height: 300px;
         }
     }
-
+    
     @media screen and (max-width: 785px) {
         .fotos {
             display: grid;
@@ -34,13 +54,13 @@
             margin-left: 150px;
             padding: 50px 0;
         }
-
+    
         .fotos-muestra img {
             max-width: 200px;
             height: 300px;
         }
     }
-
+    
     @media screen and (max-width: 365px) {
         .fotos {
             display: grid;
@@ -49,7 +69,7 @@
             margin-left: 20px;
             padding: 50px 0;
         }
-
+    
         .fotos-muestra img {
             max-width: 200px;
             height: 300px;

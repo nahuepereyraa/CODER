@@ -9,6 +9,25 @@
   }
 }
 /* Estilos específicos para pantallas pequeñas imagenes inicio*/
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-left: 150px;
+  padding: 50px 0;
+}
+
+.fotos-muestra img {
+  max-width: 500px;
+  height: 300px;
+}
+
+.accordion-button {
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+}
+
 @media screen and (max-width: 1150px) {
   .fotos {
     display: grid;
@@ -179,26 +198,6 @@ h2 {
   text-decoration: none;
   font-size: 20px;
   padding: 20px 20px 0px 20px;
-}
-
-/**************IMAGENES INICIO*************/
-.fotos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  margin-left: 150px;
-  padding: 50px 0;
-}
-
-.fotos-muestra img {
-  max-width: 500px;
-  height: 300px;
-}
-
-.accordion-button {
-  color: #fff;
-  text-align: center;
-  background-color: #333;
 }
 
 #menufooter {
