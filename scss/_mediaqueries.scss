@@ -1,0 +1,69 @@
+    /* Estilos específicos para pantallas pequeñas form. contacto*/
+    @media(max-width: 600px) {
+        form .form-control {
+            margin-bottom: 10px;
+        }
+
+        .redes {
+            text-align: center;
+        }
+    }
+
+
+    /* Estilos específicos para pantallas pequeñas imagenes inicio*/
+    @media screen and (max-width: 1150px) {
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            margin-left: 50px;
+            padding: 50px 0;
+        }
+
+        .fotos-muestra img {
+            max-width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 785px) {
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 50px;
+            margin-left: 150px;
+            padding: 50px 0;
+        }
+
+        .fotos-muestra img {
+            max-width: 200px;
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 365px) {
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 50px;
+            margin-left: 20px;
+            padding: 50px 0;
+        }
+
+        .fotos-muestra img {
+            max-width: 200px;
+            height: 300px;
+        }
+    }
+
+    /* Estilos específicos para pantallas pequeñas form. reservas*/
+
+    @media screen and (max-width: 600px) {
+        .container2 {
+            margin-bottom: 10px;
+        }
+    
+        .redes {
+            text-align: center;
+        }
+    }
