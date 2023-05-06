@@ -28,6 +28,11 @@
   background-color: #333;
 }
 
+.fotos-muestra:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 @media screen and (max-width: 1150px) {
   .fotos {
     display: grid;
